@@ -51,6 +51,8 @@ group :development, :test do
   gem 'vcr'
   gem 'simplecov'
   gem 'jsonapi-serializer'
+  gem 'pry'
+
 end
 
 group :test do
