@@ -52,7 +52,7 @@ group :development, :test do
   gem 'simplecov'
   gem 'jsonapi-serializer'
   gem 'pry'
-
+  gem 'pry-rails'
 end
 
 group :test do

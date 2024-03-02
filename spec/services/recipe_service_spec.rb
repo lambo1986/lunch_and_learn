@@ -1,10 +1,10 @@
 require "rails_helper"
 
 RSpec.describe RecipeService, vcr: true, type: :service do
-  describe "methods" do
+  describe "#get_rando_recipes_for_country" do
     it "returns a randomized list of recipes for an input country" do
       service = RecipeService.new.get_rando_recipes_for_country("Norway")
-require 'pry'; binding.pry
+
       expect(service).to be_a(Hash)
     end
   end
