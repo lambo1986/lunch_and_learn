@@ -9,10 +9,14 @@ class ImageVideoSerializer
   end
 
   attribute :video do |object|
-    {
-      title: object[:video].title,
-      youtube_video_id: object[:video].video_id
-    }
+    if object[:video].nil? || object[:video] == {}
+      {}
+    else
+      {
+        title: object[:video].title,
+        youtube_video_id: object[:video].video_id
+      }
+    end
   end
 
   attribute :images do |object|
