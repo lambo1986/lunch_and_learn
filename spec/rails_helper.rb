@@ -80,8 +80,5 @@ VCR.configure do |config|
   config.filter_sensitive_data('EDAMAM') { Rails.application.credentials[:api_key][:recipes] }
   config.filter_sensitive_data('YOUTUBE') { Rails.application.credentials[:api_key][:youtube_data] }
   config.filter_sensitive_data('PEXEL') { Rails.application.credentials[:api_key][:pexel] }
-  # config.ignore_request do |request|
-  #   request.uri == "https://restcountries.com/v3.1/all"
-  # end
-  config.default_cassette_options = { match_requests_on: [:method, :path], }
+  config.default_cassette_options = { match_requests_on: [:method, :path] }
 end
