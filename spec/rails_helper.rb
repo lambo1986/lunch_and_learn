@@ -78,6 +78,9 @@ VCR.configure do |config|
   config.hook_into :webmock
   config.configure_rspec_metadata!
   config.filter_sensitive_data('EDAMAM') { Rails.application.credentials[:api_key][:recipes] }
-  # config.allow_http_connections_when_no_cassette = true
-  # config.default_cassette_options = { record: :all }
+  config.ignore_request do |request|
+    request.uri == "https://restcountries.com/v3.1/all"
+  end
 end
+# config.default_cassette_options = { record: :all }
+# config.allow_http_connections_when_no_cassette = true
