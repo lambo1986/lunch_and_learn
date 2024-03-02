@@ -12,7 +12,7 @@ class RecipeService
 
   def conn
     Faraday.new(url: "https://api.edamam.com") do |faraday|
-      faraday.params["app_id"] = "cb4a5fa2"
+      faraday.params["app_id"] = Rails.application.credentials.api_key[:recipes_id]
       faraday.params["app_key"] = Rails.application.credentials.api_key[:recipes]
     end
   end

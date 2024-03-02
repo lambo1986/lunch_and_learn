@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sat, 02 Mar 2024 18:20:26 GMT
+      - Sat, 02 Mar 2024 18:42:59 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -45,7 +45,7 @@ http_interactions:
       string: |
         {
           "kind": "youtube#searchListResponse",
-          "etag": "1ZZLqO8WVisal2f4jzUvaQC-T9U",
+          "etag": "C6gOANdLzQT6t2cksIQEDaCtv-Y",
           "nextPageToken": "CAUQAA",
           "regionCode": "US",
           "pageInfo": {
@@ -89,74 +89,6 @@ http_interactions:
             },
             {
               "kind": "youtube#searchResult",
-              "etag": "gCUXCqmHoBQ62SpUe3Siz9tRKQM",
-              "id": {
-                "kind": "youtube#video",
-                "videoId": "DD4wjwaFU-U"
-              },
-              "snippet": {
-                "publishedAt": "2021-05-07T03:20:53Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
-                "title": "A Super Quick History of Italy",
-                "description": "Sources: \"A Brief History of Italy\" (2018) by Jeremy Black. Robinson Publishing, London. \"The Pursuit of Italy: A History of its ...",
-                "thumbnails": {
-                  "default": {
-                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/default.jpg",
-                    "width": 120,
-                    "height": 90
-                  },
-                  "medium": {
-                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/mqdefault.jpg",
-                    "width": 320,
-                    "height": 180
-                  },
-                  "high": {
-                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/hqdefault.jpg",
-                    "width": 480,
-                    "height": 360
-                  }
-                },
-                "channelTitle": "Mr History",
-                "liveBroadcastContent": "none",
-                "publishTime": "2021-05-07T03:20:53Z"
-              }
-            },
-            {
-              "kind": "youtube#searchResult",
-              "etag": "PFKcUaLh_Ij4h4L2eSpoKnUD8KQ",
-              "id": {
-                "kind": "youtube#video",
-                "videoId": "dm9HJQNbU0M"
-              },
-              "snippet": {
-                "publishedAt": "2022-04-15T03:34:02Z",
-                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
-                "title": "A Super Quick History of Morocco",
-                "description": "Audio Requiring Attribution: Arab Instruments: https://commons.wikimedia.org/wiki/File:Playing_Darbuka_on_the_Beach.webm ...",
-                "thumbnails": {
-                  "default": {
-                    "url": "https://i.ytimg.com/vi/dm9HJQNbU0M/default.jpg",
-                    "width": 120,
-                    "height": 90
-                  },
-                  "medium": {
-                    "url": "https://i.ytimg.com/vi/dm9HJQNbU0M/mqdefault.jpg",
-                    "width": 320,
-                    "height": 180
-                  },
-                  "high": {
-                    "url": "https://i.ytimg.com/vi/dm9HJQNbU0M/hqdefault.jpg",
-                    "width": 480,
-                    "height": 360
-                  }
-                },
-                "channelTitle": "Mr History",
-                "liveBroadcastContent": "none",
-                "publishTime": "2022-04-15T03:34:02Z"
-              }
-            },
-            {
-              "kind": "youtube#searchResult",
               "etag": "l9vL-oYb7ZwBLhBMYAgMvAKhkXc",
               "id": {
                 "kind": "youtube#video",
@@ -191,39 +123,107 @@ http_interactions:
             },
             {
               "kind": "youtube#searchResult",
-              "etag": "kpNDVPIuBks37ku7MJwjb1yoCl4",
+              "etag": "gCUXCqmHoBQ62SpUe3Siz9tRKQM",
               "id": {
                 "kind": "youtube#video",
-                "videoId": "fXj8LwzQnPw"
+                "videoId": "DD4wjwaFU-U"
               },
               "snippet": {
-                "publishedAt": "2021-12-19T22:20:44Z",
+                "publishedAt": "2021-05-07T03:20:53Z",
                 "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
-                "title": "A Super Quick History of Mali",
-                "description": "Pictures Requiring Attribution: UNESCO Bureau of Mali: https://en.wikipedia.org/wiki/File:Timbuktu-139085.jpg Devriese: ...",
+                "title": "A Super Quick History of Italy",
+                "description": "Sources: \"A Brief History of Italy\" (2018) by Jeremy Black. Robinson Publishing, London. \"The Pursuit of Italy: A History of its ...",
                 "thumbnails": {
                   "default": {
-                    "url": "https://i.ytimg.com/vi/fXj8LwzQnPw/default.jpg",
+                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/default.jpg",
                     "width": 120,
                     "height": 90
                   },
                   "medium": {
-                    "url": "https://i.ytimg.com/vi/fXj8LwzQnPw/mqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/mqdefault.jpg",
                     "width": 320,
                     "height": 180
                   },
                   "high": {
-                    "url": "https://i.ytimg.com/vi/fXj8LwzQnPw/hqdefault.jpg",
+                    "url": "https://i.ytimg.com/vi/DD4wjwaFU-U/hqdefault.jpg",
                     "width": 480,
                     "height": 360
                   }
                 },
                 "channelTitle": "Mr History",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-12-19T22:20:44Z"
+                "publishTime": "2021-05-07T03:20:53Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "_6zcMoqjZj0yQYuG8xrErZabhQU",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "I22A32uBvRo"
+              },
+              "snippet": {
+                "publishedAt": "2020-07-18T20:23:35Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of France",
+                "description": "Sources: A History of France (2018) by John Julius Norwich. Atlantic Monthly Press, New York. A Concise History of France (2005) ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/I22A32uBvRo/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-07-18T20:23:35Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "SXMJfta_LKGNRNlpGzXy6260vsE",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "eE-p4ySG-nk"
+              },
+              "snippet": {
+                "publishedAt": "2021-08-21T03:00:29Z",
+                "channelId": "UCluQ5yInbeAkkeCndNnUhpw",
+                "title": "A Super Quick History of Kyrgyzstan",
+                "description": "Audio Requiring Attribution: Nurlan Shantayev: https://commons.wikimedia.org/wiki/File:Kyrgyz_Komuz._Philadelphia,_PA ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/eE-p4ySG-nk/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Mr History",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-08-21T03:00:29Z"
               }
             }
           ]
         }
-  recorded_at: Sat, 02 Mar 2024 18:20:26 GMT
+  recorded_at: Sat, 02 Mar 2024 18:42:58 GMT
 recorded_with: VCR 6.2.0
