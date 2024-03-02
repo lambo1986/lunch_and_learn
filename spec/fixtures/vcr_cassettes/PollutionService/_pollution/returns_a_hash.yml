@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/air_pollution?appid=EDAMAM&lat=30&lon=90
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 02 Mar 2024 22:08:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '177'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=30&lon=90"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":90,"lat":30},"list":[{"main":{"aqi":1},"components":{"co":188.59,"no":0,"no2":0.87,"o3":55.08,"so2":0.11,"pm2_5":5.28,"pm10":6.36,"nh3":13.17},"dt":1709417320}]}'
+  recorded_at: Sat, 02 Mar 2024 22:08:40 GMT
+recorded_with: VCR 6.2.0

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=EDAMAM&limit=1&q=New%20Orleans,70117
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 02 Mar 2024 21:59:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '448'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=1&q=new+orleans%2c70117"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6Ik5ldyBPcmxlYW5zIiwibG9jYWxfbmFtZXMiOnsia28iOiLribTsmKzrpqzslrjsiqQiLCJiciI6Ik9ybGVhw7FzIE5ldmV6IiwiZnIiOiJMYSBOb3V2ZWxsZS1PcmzDqWFucyIsImVzIjoiTnVldmEgT3JsZWFucyIsImNhIjoiTm92YSBPcmxlYW5zIiwia24iOiLgsrngs4rgsrgg4LKS4LKw4LON4LKy4LOA4LKo4LON4LK44LONIiwib2MiOiJOw7J2YSBPcmxlYW5zIiwiemgiOiLmlrDlpaXlsJToia8v57SQ5aWn6ImvIiwic3IiOiLQitGDINCe0YDQu9C10LDQvdGBIiwiZW4iOiJOZXcgT3JsZWFucyIsImphIjoi44OL44Ol44O844Kq44O844Oq44Oz44K6IiwidmkiOiJOZ+G7jWMgTMOibiIsInJ1Ijoi0J3QvtCy0YvQuSDQntGA0LvQtdCw0L0ifSwibGF0IjoyOS45NzU5OTgzLCJsb24iOi05MC4wNzgyMTI3LCJjb3VudHJ5IjoiVVMiLCJzdGF0ZSI6IkxvdWlzaWFuYSJ9XQ==
+  recorded_at: Sat, 02 Mar 2024 21:59:38 GMT
+recorded_with: VCR 6.2.0
