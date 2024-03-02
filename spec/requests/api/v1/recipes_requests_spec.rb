@@ -32,13 +32,13 @@ RSpec.describe "Api::V1::Recipes", vcr: true, type: :request do
       expect(json_response["data"]).to eq([])
     end
 
-    it "returns an empty array if empty string is passed as country" do# troublesome
+    it "returns an empty array if empty string is passed as country" do# troublesome, returns something if totally empty
       get "/api/v1/recipes?country=____"
 
       json_response = JSON.parse(response.body)
 
       expect(response).to have_http_status(:ok)
-      expect(json_response["data"]).to eq []
+      expect(json_response["data"]).to eq([])
     end
   end
 end
