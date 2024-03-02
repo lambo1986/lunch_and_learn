@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=cb4a5fa2&app_key=EDAMAM&q=dhgsf&random=true&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=cb4a5fa2&app_key=EDAMAM&q=Heard%20Island%20and%20McDonald%20Islands&random=true&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -39,7 +39,7 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 2689dddd977d981bf9f42a8e0719eda7
+      - b3c2dd8fe72216e3945d9d2f8dd94475
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'

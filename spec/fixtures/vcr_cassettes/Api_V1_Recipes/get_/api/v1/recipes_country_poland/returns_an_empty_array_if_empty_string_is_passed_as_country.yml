@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=cb4a5fa2&app_key=EDAMAM&q=dhgsf&random=true&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=cb4a5fa2&app_key=EDAMAM&q=____&random=true&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Sat, 02 Mar 2024 18:43:04 GMT
+      - Sat, 02 Mar 2024 18:43:05 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -33,15 +33,15 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 GMT
       X-Served-By:
-      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
       Content-Language:
       - en
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 2689dddd977d981bf9f42a8e0719eda7
+      - ceab2e764c6f10ac942b9410d6eb4ad8
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Sat, 02 Mar 2024 18:43:04 GMT
+  recorded_at: Sat, 02 Mar 2024 18:43:05 GMT
 recorded_with: VCR 6.2.0
