@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe "create a new user endpoint", vcr: true, type: :request do
+RSpec.describe "create a new user endpoint", type: :request do
   describe "POST /api/v1/users" do
     it "creates a new user in the database, returns api key" do
       headers = { "CONTENT_TYPE" => "application/json", "ACCEPT" => "application/json" }
