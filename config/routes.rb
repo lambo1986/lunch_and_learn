@@ -6,7 +6,7 @@ Rails.application.routes.draw do
       resources :recipes, only: [:index]
       resources :users, only: [:create]
       resources :sessions, only: [:create]
-      resources :favorites, only: [:create, :index]
+      resources :favorites, only: [:create, :index, :destroy]
       get '/learning_resources', to: 'countries#show', as: 'country'
     end
   end
