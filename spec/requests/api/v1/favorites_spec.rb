@@ -33,5 +33,23 @@ RSpec.describe "favorite recipes", type: :request do
       expect(response.status).to eq(401)
       expect(JSON.parse(response.body)["error"]).to eq("Invalid API Key!")
     end
+
+    it "fails to create a new favorite that belongs to a user if unprocessable" do
+      user = User.create!(name: "Hansi P. Schmultzta", email: "smk@oolk.net", password: "craf!3G", password_confirmation: "craf!3G")
+      fav_params = {
+        api_key: user.api_key,
+        country: "",
+        recipe_link: "",
+        recipe_title: ""
+      }.to_json
+
+      post "/api/v1/favorites", params: fav_params, headers: { "Content-Type" => "application/json", "Accept" => "application/json" }
+
+      errors = JSON.parse(response.body)["errors"]
+      
+      expect(response).to have_http_status(:unprocessable_entity)
+      expect(response.status).to eq(422)
+      expect(errors).to include("Country can't be blank", "Recipe link can't be blank", "Recipe title can't be blank")
+    end
   end
 end

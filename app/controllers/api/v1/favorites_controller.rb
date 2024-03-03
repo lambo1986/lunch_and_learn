@@ -1,7 +1,7 @@
 class Api::V1::FavoritesController < ApplicationController
   before_action :authenticate_user_api_key
   def create
-    favorite = @_current_user.favorites.create!(favorite_params)
+    favorite = @_current_user.favorites.new(favorite_params)
 
     if favorite.save
       render json: { success: "Favorite created successfully!" }, status: :created
