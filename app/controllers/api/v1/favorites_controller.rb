@@ -2,7 +2,10 @@ class Api::V1::FavoritesController < ApplicationController
   before_action :authenticate_user_api_key, only: [:index, :create, :destroy]
 
   def index
-    favorites = @_current_user.favorites
+    cache_key = "user_#{@_current_user.id}_favorites"
+    favorites = Rails.cache.fetch(cache_key, expires_in: 1.hour) do
+      @_current_user.favorites.to_a
+    end
     render json: FavoritesSerializer.new(favorites).serializable_hash.to_json
   end
 

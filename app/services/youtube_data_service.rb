@@ -1,6 +1,9 @@
 class YoutubeDataService
+
   def get_videos_for_country(country)#(Mr. History)
-    get_url("?&part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{country}&type=video")
+    Rails.cache.fetch("youtube_videos_for_#{country}", expires_in: 12.hours) do
+      get_url("?&part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{country}&type=video")
+    end
   end
 
   private

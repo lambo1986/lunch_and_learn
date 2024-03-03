@@ -1,6 +1,9 @@
 class RecipeService
+
   def get_rando_recipes_for_country(country)
-    recipes = get_url("/api/recipes/v2?q=#{country}&type=public&random=true")
+    Rails.cache.fetch("rando_recipes_for_#{country}", expires_in: 12.hours) do
+      recipes = get_url("/api/recipes/v2?q=#{country}&type=public&random=true")
+    end
   end
 
   private

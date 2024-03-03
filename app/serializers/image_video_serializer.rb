@@ -1,4 +1,5 @@
 class ImageVideoSerializer
+
   include JSONAPI::Serializer
 
   set_id { nil }

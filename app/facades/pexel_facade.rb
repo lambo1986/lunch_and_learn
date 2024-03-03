@@ -1,4 +1,5 @@
 class PexelFacade
+
   def image_search(country)
     service = PexelService.new
     call = service.images(country)
