@@ -10,11 +10,8 @@ class YoutubeDataService
     if response.status == 200
       data = JSON.parse(response.body, symbolize_names: true)
       data[:items]
-    else
-      { error: "API request failed", status: response.status, body: response.body }
     end
   end
-
 
   def conn
     Faraday.new(url: "https://www.googleapis.com/youtube/v3/search") do |faraday|
