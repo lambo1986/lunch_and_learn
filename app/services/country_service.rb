@@ -1,12 +1,15 @@
 class CountryService
+
   def countries
-    countries = get_url("https://restcountries.com/v3.1/all")
+    Rails.cache.fetch("countries", expires_in: 12.hours) do
+      get_url("https://restcountries.com/v3.1/all")
+    end
   end
 
   def random_country
     countries.sample[:name][:common]
   end
-  
+
   private
 
   def get_url(url)

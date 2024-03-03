@@ -1,4 +1,5 @@
 class FavoritesSerializer
+
   include JSONAPI::Serializer
 
   set_type :favorite

@@ -1,4 +1,5 @@
 class Api::V1::CountriesController < ApplicationController
+
   def show
     country_name = params[:country]
     video = YoutubeDataFacade.new.one_country(country_name)

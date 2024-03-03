@@ -1,4 +1,5 @@
 class RecipeSerializer
+
   include JSONAPI::Serializer
 
   set_id :id
