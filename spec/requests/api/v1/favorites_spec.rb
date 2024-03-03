@@ -58,7 +58,15 @@ RSpec.describe "favorite recipes", type: :request do
       user = User.create!(name: "Hansi P. Schmultzta", email: "smk@oolk.net", password: "craf!3G", password_confirmation: "craf!3G")
       favorite1 = user.favorites.create!(country: "Germany", recipe_link: "https://sdfsdfsdf.com", recipe_title: "Hot Sausage and Sour Kraut")
       favorite2 = user.favorites.create!(country: "Iceland", recipe_link: "https://sdfsdfsdf.vom/iceland", recipe_title: "Hot Soupy Stuff and Rotten Fish")
-      
+
+      get "/api/v1/favorites?api_key=#{user.api_key}", headers: { "Content-Type" => "application/json", "Accept" => "application/json" }
+
+      json_response = JSON.parse(response.body)
+
+      expect(response).to have_http_status(:success)
+      expect(json_response["data"]["type"]).to eq("favorite")
+      expect(json_response["data"].first["attributes"]["recipe_title"]).to eq("Hot Sausage and Sour Kraut")
+      expect(json_response["data"].last["attributes"]["recipe_title"]).to eq("Hot Soupy Stuff and Rotten Fish")
     end
   end
 end

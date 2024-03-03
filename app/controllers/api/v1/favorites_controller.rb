@@ -1,5 +1,10 @@
 class Api::V1::FavoritesController < ApplicationController
   before_action :authenticate_user_api_key
+
+  def index
+
+  end
+  
   def create
     favorite = @_current_user.favorites.new(favorite_params)
 
