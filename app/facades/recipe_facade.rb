@@ -1,4 +1,5 @@
 class RecipeFacade
+  
   def by_country(country)
     service = RecipeService.new
     if country.present?

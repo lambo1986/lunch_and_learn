@@ -1,4 +1,5 @@
 class RecipeService
+  
   def get_rando_recipes_for_country(country)
     recipes = get_url("/api/recipes/v2?q=#{country}&type=public&random=true")
   end

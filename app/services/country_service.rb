@@ -1,4 +1,5 @@
 class CountryService
+
   def countries
     countries = get_url("https://restcountries.com/v3.1/all")
   end
@@ -6,7 +7,7 @@ class CountryService
   def random_country
     countries.sample[:name][:common]
   end
-  
+
   private
 
   def get_url(url)

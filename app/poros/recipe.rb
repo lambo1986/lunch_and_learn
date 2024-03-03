@@ -1,5 +1,7 @@
 class Recipe
+
   attr_reader :id, :type, :title, :url, :image
+  
   def initialize(attrs)
     @id = nil
     @type = "recipe"

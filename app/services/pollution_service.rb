@@ -1,17 +1,19 @@
 class PollutionService
-  def initialize
-    @pollution_base = "http://api.openweathermap.org/data/2.5/air_pollution"
-    @weather_key = Rails.application.credentials.api_key[:weather]
-  end
 
   def pollution(lat, lon)
-    data = get_url("#{@pollution_base}?lat=30&lon=90&appid=#{@weather_key}")
+    get_url("?lat=#{lat}&lon=#{lon}")
   end
 
   private
 
   def get_url(url)
-    response = Faraday.get(url)
+    response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def conn
+    Faraday.new(url: "https://api.openweathermap.org/data/2.5/air_pollution") do |faraday|
+      faraday.params[:appid] = Rails.application.credentials.api_key[:weather]
+    end
   end
 end
