@@ -54,7 +54,7 @@ RSpec.describe "favorite recipes", type: :request do
   end
 
   describe "GET /api/v1/favorites" do
-    it "returns all favorites belonging to a user" do
+    it "returns all favorites belonging to a user when they have favorites" do
       user = User.create!(name: "Hansi P. Schmultzta", email: "smk@oolk.net", password: "craf!3G", password_confirmation: "craf!3G")
       favorite1 = user.favorites.create!(country: "Germany", recipe_link: "https://sdfsdfsdf.com", recipe_title: "Hot Sausage and Sour Kraut")
       favorite2 = user.favorites.create!(country: "Iceland", recipe_link: "https://sdfsdfsdf.vom/iceland", recipe_title: "Hot Soupy Stuff and Rotten Fish")
@@ -64,9 +64,34 @@ RSpec.describe "favorite recipes", type: :request do
       json_response = JSON.parse(response.body)
 
       expect(response).to have_http_status(:success)
-      expect(json_response["data"]["type"]).to eq("favorite")
+      expect(json_response["data"].first["type"]).to eq("favorite")
       expect(json_response["data"].first["attributes"]["recipe_title"]).to eq("Hot Sausage and Sour Kraut")
       expect(json_response["data"].last["attributes"]["recipe_title"]).to eq("Hot Soupy Stuff and Rotten Fish")
+    end
+
+    it "returns an empty array when a user has no favorites" do
+      user = User.create!(name: "Hansi P. Schmultzta", email: "smk@oolk.net", password: "craf!3G", password_confirmation: "craf!3G")
+
+      get "/api/v1/favorites?api_key=#{user.api_key}", headers: { "Content-Type" => "application/json", "Accept" => "application/json" }
+
+      json_response = JSON.parse(response.body)
+
+      expect(response).to have_http_status(:success)
+      expect(json_response["data"].length).to eq(0)
+      expect(json_response["data"]).to eq([])
+    end
+
+    it "is sad when the API key is wrong" do
+      user = User.create!(name: "Hansi P. Schmultzta", email: "smk@oolk.net", password: "craf!3G", password_confirmation: "craf!3G")
+      favorite1 = user.favorites.create!(country: "Germany", recipe_link: "https://sdfsdfsdf.com", recipe_title: "Hot Sausage and Sour Kraut")
+
+      get "/api/v1/favorites?wrongkeydude", headers: { "Content-Type" => "application/json", "Accept" => "application/json" }
+
+      json_response = JSON.parse(response.body)
+
+      expect(response).to have_http_status(:unauthorized)
+      expect(response.status).to eq(401)
+      expect(json_response["error"]).to eq("Invalid API Key!")
     end
   end
 end
