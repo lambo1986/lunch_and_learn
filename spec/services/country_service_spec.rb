@@ -18,4 +18,12 @@ RSpec.describe CountryService, vcr: true, type: :service do
       expect(country).to be_a(String)
     end
   end
+
+  describe "#capital_of" do
+    it "returns the capital of a country" do
+      capital = CountryService.new.capital_of("India")
+
+      expect(capital).to be_a(String)
+    end
+  end
 end

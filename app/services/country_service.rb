@@ -4,6 +4,11 @@ class CountryService
     get_url("all")
   end
 
+  def capital_of(country)
+    data = get_url("name/#{country}?fullText=true")
+    data.first[:capital].first
+  end
+
   def random_country
     countries.sample[:name][:common]
   end
