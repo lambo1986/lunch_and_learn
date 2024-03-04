@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/India?fullText=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 04 Mar 2024 16:28:08 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3315'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6eyJjb21tb24iOiJJbmRpYSIsIm9mZmljaWFsIjoiUmVwdWJsaWMgb2YgSW5kaWEiLCJuYXRpdmVOYW1lIjp7ImVuZyI6eyJvZmZpY2lhbCI6IlJlcHVibGljIG9mIEluZGlhIiwiY29tbW9uIjoiSW5kaWEifSwiaGluIjp7Im9mZmljaWFsIjoi4KSt4KS+4KSw4KSkIOCkl+Cko+CksOCkvuCknOCljeCkryIsImNvbW1vbiI6IuCkreCkvuCksOCkpCJ9LCJ0YW0iOnsib2ZmaWNpYWwiOiLgrofgrqjgr43grqTgrr/grq/grpXgr40g4K6V4K+B4K6f4K6/4K6v4K6w4K6a4K+BIiwiY29tbW9uIjoi4K6H4K6o4K+N4K6k4K6/4K6v4K6+In19fSwidGxkIjpbIi5pbiJdLCJjY2EyIjoiSU4iLCJjY24zIjoiMzU2IiwiY2NhMyI6IklORCIsImNpb2MiOiJJTkQiLCJpbmRlcGVuZGVudCI6dHJ1ZSwic3RhdHVzIjoib2ZmaWNpYWxseS1hc3NpZ25lZCIsInVuTWVtYmVyIjp0cnVlLCJjdXJyZW5jaWVzIjp7IklOUiI6eyJuYW1lIjoiSW5kaWFuIHJ1cGVlIiwic3ltYm9sIjoi4oK5In19LCJpZGQiOnsicm9vdCI6Iis5Iiwic3VmZml4ZXMiOlsiMSJdfSwiY2FwaXRhbCI6WyJOZXcgRGVsaGkiXSwiYWx0U3BlbGxpbmdzIjpbIklOIiwiQmjEgXJhdCIsIlJlcHVibGljIG9mIEluZGlhIiwiQmhhcmF0IEdhbnJhanlhIiwi4K6H4K6o4K+N4K6k4K6/4K6v4K6+Il0sInJlZ2lvbiI6IkFzaWEiLCJzdWJyZWdpb24iOiJTb3V0aGVybiBBc2lhIiwibGFuZ3VhZ2VzIjp7ImVuZyI6IkVuZ2xpc2giLCJoaW4iOiJIaW5kaSIsInRhbSI6IlRhbWlsIn0sInRyYW5zbGF0aW9ucyI6eyJhcmEiOnsib2ZmaWNpYWwiOiLYrNmF2YfZiNix2YrYqSDYp9mE2YfZhtivIiwiY29tbW9uIjoi2KfZhNmH2YbYryJ9LCJicmUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBJbmRpYSIsImNvbW1vbiI6IkluZGlhIn0sImNlcyI6eyJvZmZpY2lhbCI6IkluZGlja8OhIHJlcHVibGlrYSIsImNvbW1vbiI6IkluZGllIn0sImN5bSI6eyJvZmZpY2lhbCI6IlJlcHVibGljIG9mIEluZGlhIiwiY29tbW9uIjoiSW5kaWEifSwiZGV1Ijp7Im9mZmljaWFsIjoiUmVwdWJsaWsgSW5kaWVuIiwiY29tbW9uIjoiSW5kaWVuIn0sImVzdCI6eyJvZmZpY2lhbCI6IkluZGlhIFZhYmFyaWlrIiwiY29tbW9uIjoiSW5kaWEifSwiZmluIjp7Im9mZmljaWFsIjoiSW50aWFuIHRhc2F2YWx0YSIsImNvbW1vbiI6IkludGlhIn0sImZyYSI6eyJvZmZpY2lhbCI6IlLDqXB1YmxpcXVlIGRlIGwnSW5kZSIsImNvbW1vbiI6IkluZGUifSwiaHJ2Ijp7Im9mZmljaWFsIjoiUmVwdWJsaWthIEluZGlqYSIsImNvbW1vbiI6IkluZGlqYSJ9LCJodW4iOnsib2ZmaWNpYWwiOiJJbmRpYWkgS8O2enTDoXJzYXPDoWciLCJjb21tb24iOiJJbmRpYSJ9LCJpdGEiOnsib2ZmaWNpYWwiOiJSZXB1YmJsaWNhIGRlbGwnSW5kaWEiLCJjb21tb24iOiJJbmRpYSJ9LCJqcG4iOnsib2ZmaWNpYWwiOiLjgqTjg7Pjg4nlhbHlkozlm70iLCJjb21tb24iOiLjgqTjg7Pjg4kifSwia29yIjp7Im9mZmljaWFsIjoi7J2464+EIOqzte2ZlOq1rSIsImNvbW1vbiI6IuyduOuPhCJ9LCJubGQiOnsib2ZmaWNpYWwiOiJSZXB1YmxpZWsgSW5kaWEiLCJjb21tb24iOiJJbmRpYSJ9LCJwZXIiOnsib2ZmaWNpYWwiOiLYrNmF2YfZiNix24wg2YfZhtiv2YjYs9iq2KfZhiIsImNvbW1vbiI6ItmH2YbYryJ9LCJwb2wiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2EgSW5kaWkiLCJjb21tb24iOiJJbmRpZSJ9LCJwb3IiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRhIMONbmRpYSIsImNvbW1vbiI6IsONbmRpYSJ9LCJydXMiOnsib2ZmaWNpYWwiOiLQoNC10YHQv9GD0LHQu9C40LrQsCDQmNC90LTQuNGPIiwiY29tbW9uIjoi0JjQvdC00LjRjyJ9LCJzbGsiOnsib2ZmaWNpYWwiOiJJbmRpY2vDoSByZXB1Ymxpa2EiLCJjb21tb24iOiJJbmRpYSJ9LCJzcGEiOnsib2ZmaWNpYWwiOiJSZXDDumJsaWNhIGRlIGxhIEluZGlhIiwiY29tbW9uIjoiSW5kaWEifSwic3JwIjp7Im9mZmljaWFsIjoi0KDQtdC/0YPQsdC70LjQutCwINCY0L3QtNC40ZjQsCIsImNvbW1vbiI6ItCY0L3QtNC40ZjQsCJ9LCJzd2UiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2VuIEluZGllbiIsImNvbW1vbiI6IkluZGllbiJ9LCJ0dXIiOnsib2ZmaWNpYWwiOiJIaW5kaXN0YW4gQ3VtaHVyaXlldGkiLCJjb21tb24iOiJIaW5kaXN0YW4ifSwidXJkIjp7Im9mZmljaWFsIjoi2KzZhduB2YjYsduM24Eg2Kjavtin2LHYqiIsImNvbW1vbiI6Itio2r7Yp9ix2KoifSwiemhvIjp7Im9mZmljaWFsIjoi5Y2w5bqm5YWx5ZKM5Zu9IiwiY29tbW9uIjoi5Y2w5bqmIn19LCJsYXRsbmciOlsyMC4wLDc3LjBdLCJsYW5kbG9ja2VkIjpmYWxzZSwiYm9yZGVycyI6WyJCR0QiLCJCVE4iLCJNTVIiLCJDSE4iLCJOUEwiLCJQQUsiXSwiYXJlYSI6MzI4NzU5MC4wLCJkZW1vbnltcyI6eyJlbmciOnsiZiI6IkluZGlhbiIsIm0iOiJJbmRpYW4ifSwiZnJhIjp7ImYiOiJJbmRpZW5uZSIsIm0iOiJJbmRpZW4ifX0sImZsYWciOiJcdUQ4M0NcdURERUVcdUQ4M0NcdURERjMiLCJtYXBzIjp7Imdvb2dsZU1hcHMiOiJodHRwczovL2dvby5nbC9tYXBzL1dTazNmTHdHNHZ0UFFldHA3Iiwib3BlblN0cmVldE1hcHMiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9yZWxhdGlvbi8zMDQ3MTYifSwicG9wdWxhdGlvbiI6MTM4MDAwNDM4NSwiZ2luaSI6eyIyMDExIjozNS43fSwiZmlmYSI6IklORCIsImNhciI6eyJzaWducyI6WyJJTkQiXSwic2lkZSI6ImxlZnQifSwidGltZXpvbmVzIjpbIlVUQyswNTozMCJdLCJjb250aW5lbnRzIjpbIkFzaWEiXSwiZmxhZ3MiOnsicG5nIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS93MzIwL2luLnBuZyIsInN2ZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vaW4uc3ZnIiwiYWx0IjoiVGhlIGZsYWcgb2YgSW5kaWEgaXMgY29tcG9zZWQgb2YgdGhyZWUgZXF1YWwgaG9yaXpvbnRhbCBiYW5kcyBvZiBzYWZmcm9uLCB3aGl0ZSBhbmQgZ3JlZW4uIEEgbmF2eSBibHVlIHdoZWVsIHdpdGggdHdlbnR5LWZvdXIgc3Bva2VzIOKAlCB0aGUgQXNob2thIENoYWtyYSDigJQgaXMgY2VudGVyZWQgaW4gdGhlIHdoaXRlIGJhbmQuIn0sImNvYXRPZkFybXMiOnsicG5nIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL2luLnBuZyIsInN2ZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9pbi5zdmcifSwic3RhcnRPZldlZWsiOiJtb25kYXkiLCJjYXBpdGFsSW5mbyI6eyJsYXRsbmciOlsyOC42LDc3LjJdfSwicG9zdGFsQ29kZSI6eyJmb3JtYXQiOiIjIyMjIyMiLCJyZWdleCI6Il4oXFxkezZ9KSQifX1d
+  recorded_at: Mon, 04 Mar 2024 16:28:08 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=WEATHER&limit=1&q=New%20Delhi,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 16:28:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2274'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=1&q=new+delhi%2c"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6Ik5ldyBEZWxoaSIsImxvY2FsX25hbWVzIjp7InRnIjoi0J3Rji3QlNC10LvQuCIsInBhIjoi4Kio4Ki14KmA4KiCIOCopuCov+CpseCosuCpgCIsImV0IjoiTmV3IERlbGhpIiwiaGUiOiLXoNeZ15Ug15PXnNeU15kiLCJjeSI6IkRlbGhpIE5ld3lkZCIsInBsIjoiTm93ZSBEZWxoaSIsImZhIjoi2K/Zh9mE24wg2YbZiCIsIm1pIjoiTmV3IERlbGhpIiwiYmUiOiLQndGM0Y4t0JTRjdC70ZYiLCJkYSI6Ik5ldyBEZWxoaSIsInRhIjoi4K6q4K+B4K6k4K+BIOCupOCuv+CusuCvjeCusuCuvyIsImJzIjoiTmV3IERlbGhpIiwia2wiOiJOZXcgRGVsaGkiLCJtZyI6Ik5ldyBEZWxoaSIsImthIjoi4YOc4YOY4YOjLeGDk+GDlOGDmuGDmCIsImxiIjoiTmVpLURlbGhpIiwibGEiOiJEZWxsaXVtIE5vdnVtIiwiY3MiOiJOb3bDqSBEaWxsw60iLCJzdyI6Ik5ldyBEZWxoaSIsInRsIjoiQmFnb25nIERlbGhpIiwibm8iOiJOZXcgRGVsaGkiLCJubiI6Ik5ldyBEZWxoaSIsImtrIjoi0J3RjNGOLdCU0LXQu9C4IiwibWwiOiLgtKjgtY3gtK/gtYIg4LSh4LWG4LW94LS54LS/IiwidmkiOiJUw6JuIERlbGhpIiwiZXUiOiJOZXcgRGVsaGkiLCJnciI6Is6dzrXOv860zrXOu86vz4IiLCJzYSI6IuCkqOCkteCkpuClh+CkueCksuClgCIsIm1zIjoiTmV3IERlbGhpIiwidWciOiLZituQ2q3ZiSDYr9uQ2r7ZhNmJIiwia24iOiLgsrngs4rgsrgg4LKm4LOG4LK54LKy4LK/IiwiY28iOiJOZXcgRGVsaGkiLCJibiI6IuCmqOCmpOCngeCmqCDgpqbgpr/gprLgp43gprLgpr8iLCJmciI6Ik5ldyBEZWxoaSIsImVsIjoizp3Orc6/IM6UzrXOu8+Hzq8iLCJodSI6IsOaamRlbGhpIiwiYm8iOiLgvZPgvbrgvaDgvbTgvIvgvZHgvbLgvaPgvIvgvaPgvbLgvI0iLCJlbyI6Ik5vdi1EZWxoaW8iLCJzcSI6Ik5ldyBEZWxoaSIsImlvIjoiTm92YS1EZWxoaSIsImZpIjoiTmV3IERlbGhpIiwiYmciOiLQndGOINCU0LXQu9GF0LgiLCJlcyI6Ik51ZXZhIERlbGhpIiwiaGkiOiLgpKjgpIgg4KSm4KS/4KSy4KWN4KSy4KWAIiwib2MiOiJOw7J2YSBEZWxoaSIsInlpIjoi16DXmdeZINeT16LXnNeZIiwidGUiOiLgsKjgsY3gsK/gsYLgsKLgsL/gsLLgsY3gsLLgsYAiLCJ1ciI6ItmG2KbbjCDYr9uB2YTbjCIsImp2IjoiTmV3IERlbGhpIiwic3YiOiJOZXcgRGVsaGkiLCJhbiI6Ik51ZXZhIERlbGhpIiwidGgiOiLguJnguLTguKfguYDguJTguKXguLUiLCJzaSI6IuC2seC3gCDgtq/gt5Lgtr3gt4rgtr3gt5LgtroiLCJzayI6Ik5hw60gRGlsbMOtIiwic2wiOiJOZXcgRGVsaGkiLCJxdSI6Ik11c3VxIERpbGhpIiwiYnIiOiJOZXcgRGVsaGkiLCJoeSI6ItWG1bXVuNaCINS01aXVrNWrIiwib3MiOiLQndGM0Y4t0JTQtdC70LgiLCJzbyI6Ik5ldyBEZWxoaSIsImFyIjoi2K/ZhNmH2Yog2KfZhNis2K/Zitiv2KkiLCJtbiI6ItCo0LjQvdGNINCU0LXQu9C4Iiwia3UiOiJEZWxoaXlhIE7DuyIsImphIjoi44OL44Ol44O844OH44Oq44O8IiwiemgiOiLmlrDlvrfph4wiLCJhbSI6IuGKkuGLjSDhi7ThiIoiLCJubCI6Ik5ldyBEZWxoaSIsInlvIjoiTmV3IERlbGhpIiwiZ3YiOiJEZWxoaSBOb2EiLCJkdiI6It6C3qjeh96q3oveqN6H3rDejd6pIiwiaWQiOiJOZXcgRGVsaGkiLCJhZiI6Ik5pZXUtRGVsaGkiLCJtayI6ItCK0YMg0JTQtdC70YXQuCIsInJvIjoiTmV3IERlbGhpIiwiaHIiOiJOZXcgRGVsaGkiLCJlbiI6Ik5ldyBEZWxoaSIsInNyIjoi0IrRgyDQlNC10LvRhdC4IiwidHIiOiJZZW5pIERlbGhpIiwiaWEiOiJOb3ZlIERlbGhpIiwiaHQiOiJOaW91IERlbGkiLCJjYSI6Ik5vdmEgRGVsaGkiLCJnbCI6IuCkqOCkiCDgpKbgpL/gpLLgpY3gpLLgpYAiLCJkZSI6Ik5ldS1EZWxoaSIsInJ1Ijoi0J3RjNGOLdCU0LXQu9C4IiwiZ2EiOiJOdWEtRGVpbMOtIiwiZ2QiOiJOZXcgRGVsaGkiLCJteSI6IuGAlOGAmuGAsOGAuOGAkuGAseGAnOGAruGAmeGAvOGAreGAr+GAtyIsImtzIjoi2YbZlNmIINiv2YTavtuMIiwiaXQiOiJOdW92YSBEZWxoaSIsImtvIjoi64m0642466asIiwiZnkiOiJOaWogRGVsbHkiLCJ1ayI6ItCd0YzRji3QlNC10LvRliIsIm1yIjoi4KSo4KS14KWAIOCkpuCkv+CksuCljeCksuClgCIsImx0IjoiTmF1amFzaXMgRGVsaXMiLCJsdiI6IsWFxatkZWxpIiwibmUiOiLgpKjgpY3gpK/gpYEg4KSm4KS/4KSy4KWN4KSy4KWAIiwiaXMiOiJOw71qYSBEZWzDrSIsInB0IjoiTm92YSBEZWxpIn0sImxhdCI6MjguNjEzODk1NCwibG9uIjo3Ny4yMDkwMDU3LCJjb3VudHJ5IjoiSU4iLCJzdGF0ZSI6IkRlbGhpIn1d
+  recorded_at: Mon, 04 Mar 2024 16:28:08 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/air_pollution?appid=WEATHER&lat=28.6138954&lon=77.2090057
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 16:28:09 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '192'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=28.61&lon=77.21"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":77.209,"lat":28.6139},"list":[{"main":{"aqi":4},"components":{"co":1001.36,"no":0,"no2":33.59,"o3":47.21,"so2":16.69,"pm2_5":57.16,"pm10":114.55,"nh3":24.83},"dt":1709569689}]}'
+  recorded_at: Mon, 04 Mar 2024 16:28:09 GMT
+recorded_with: VCR 6.2.0
