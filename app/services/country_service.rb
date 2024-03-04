@@ -1,7 +1,7 @@
 class CountryService
 
   def countries
-    countries = get_url("https://restcountries.com/v3.1/all")
+    countries = get_url("all")
   end
 
   def random_country
@@ -11,7 +11,11 @@ class CountryService
   private
 
   def get_url(url)
-    response = Faraday.get(url)
+    response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def conn
+    Faraday.new(url: "https://restcountries.com/v3.1/")
   end
 end
