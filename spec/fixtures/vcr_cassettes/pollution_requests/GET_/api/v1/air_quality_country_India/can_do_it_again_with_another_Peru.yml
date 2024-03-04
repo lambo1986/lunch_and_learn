@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/Peru?fullText=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 04 Mar 2024 16:50:57 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3104'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6eyJjb21tb24iOiJQZXJ1Iiwib2ZmaWNpYWwiOiJSZXB1YmxpYyBvZiBQZXJ1IiwibmF0aXZlTmFtZSI6eyJheW0iOnsib2ZmaWNpYWwiOiJQaXJ1dyBTdXl1IiwiY29tbW9uIjoiUGlydXcifSwicXVlIjp7Im9mZmljaWFsIjoiUGlydXcgUmlwdXdsaWthIiwiY29tbW9uIjoiUGlydXcifSwic3BhIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkZWwgUGVyw7oiLCJjb21tb24iOiJQZXLDuiJ9fX0sInRsZCI6WyIucGUiXSwiY2NhMiI6IlBFIiwiY2NuMyI6IjYwNCIsImNjYTMiOiJQRVIiLCJjaW9jIjoiUEVSIiwiaW5kZXBlbmRlbnQiOnRydWUsInN0YXR1cyI6Im9mZmljaWFsbHktYXNzaWduZWQiLCJ1bk1lbWJlciI6dHJ1ZSwiY3VycmVuY2llcyI6eyJQRU4iOnsibmFtZSI6IlBlcnV2aWFuIHNvbCIsInN5bWJvbCI6IlMvICJ9fSwiaWRkIjp7InJvb3QiOiIrNSIsInN1ZmZpeGVzIjpbIjEiXX0sImNhcGl0YWwiOlsiTGltYSJdLCJhbHRTcGVsbGluZ3MiOlsiUEUiLCJSZXB1YmxpYyBvZiBQZXJ1IiwiUmVww7pibGljYSBkZWwgUGVyw7oiXSwicmVnaW9uIjoiQW1lcmljYXMiLCJzdWJyZWdpb24iOiJTb3V0aCBBbWVyaWNhIiwibGFuZ3VhZ2VzIjp7ImF5bSI6IkF5bWFyYSIsInF1ZSI6IlF1ZWNodWEiLCJzcGEiOiJTcGFuaXNoIn0sInRyYW5zbGF0aW9ucyI6eyJhcmEiOnsib2ZmaWNpYWwiOiLYrNmF2YfZiNix2YrYqSDYqNmK2LHZiCIsImNvbW1vbiI6Itio2YrYsdmIIn0sImJyZSI6eyJvZmZpY2lhbCI6IlJlcHVibGlrIFBlcm91IiwiY29tbW9uIjoiUGVyb3UifSwiY2VzIjp7Im9mZmljaWFsIjoiUGVydcOhbnNrw6EgcmVwdWJsaWthIiwiY29tbW9uIjoiUGVydSJ9LCJjeW0iOnsib2ZmaWNpYWwiOiJSZXB1YmxpYyBvZiBQZXJ1IiwiY29tbW9uIjoiUGVydSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBQZXJ1IiwiY29tbW9uIjoiUGVydSJ9LCJlc3QiOnsib2ZmaWNpYWwiOiJQZXJ1dSBWYWJhcmlpayIsImNvbW1vbiI6IlBlcnV1In0sImZpbiI6eyJvZmZpY2lhbCI6IlBlcnVuIHRhc2F2YWx0YSIsImNvbW1vbiI6IlBlcnUifSwiZnJhIjp7Im9mZmljaWFsIjoiUsOpcHVibGlxdWUgZHUgUMOpcm91IiwiY29tbW9uIjoiUMOpcm91In0sImhydiI6eyJvZmZpY2lhbCI6IlJlcHVibGlrYSBQZXJ1IiwiY29tbW9uIjoiUGVydSJ9LCJodW4iOnsib2ZmaWNpYWwiOiJQZXJ1aSBLw7Z6dMOhcnNhc8OhZyIsImNvbW1vbiI6IlBlcnUifSwiaXRhIjp7Im9mZmljaWFsIjoiUmVwdWJibGljYSBkZWwgUGVyw7kiLCJjb21tb24iOiJQZXLDuSJ9LCJqcG4iOnsib2ZmaWNpYWwiOiLjg5rjg6vjg7zlhbHlkozlm70iLCJjb21tb24iOiLjg5rjg6vjg7wifSwia29yIjp7Im9mZmljaWFsIjoi7Y6Y66OoIOqzte2ZlOq1rSIsImNvbW1vbiI6Iu2OmOujqCJ9LCJubGQiOnsib2ZmaWNpYWwiOiJSZXB1YmxpZWsgUGVydSIsImNvbW1vbiI6IlBlcnUifSwicGVyIjp7Im9mZmljaWFsIjoi2KzZhdmH2YjYsduMINm+2LHZiCIsImNvbW1vbiI6Itm+2LHZiCJ9LCJwb2wiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2EgUGVydSIsImNvbW1vbiI6IlBlcnUifSwicG9yIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkbyBQZXJ1IiwiY29tbW9uIjoiUGVyw7oifSwicnVzIjp7Im9mZmljaWFsIjoi0KDQtdGB0L/Rg9Cx0LvQuNC60LAg0J/QtdGA0YMiLCJjb21tb24iOiLQn9C10YDRgyJ9LCJzbGsiOnsib2ZmaWNpYWwiOiJQZXJ1w6Fuc2thIHJlcHVibGlrYSIsImNvbW1vbiI6IlBlcnUifSwic3BhIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkZSBQZXLDuiIsImNvbW1vbiI6IlBlcsO6In0sInNycCI6eyJvZmZpY2lhbCI6ItCg0LXQv9GD0LHQu9C40LrQsCDQn9C10YDRgyIsImNvbW1vbiI6ItCf0LXRgNGDIn0sInN3ZSI6eyJvZmZpY2lhbCI6IlJlcHVibGlrZW4gUGVydSIsImNvbW1vbiI6IlBlcnUifSwidHVyIjp7Im9mZmljaWFsIjoiUGVydSBDdW1odXJpeWV0aSIsImNvbW1vbiI6IlBlcnUifSwidXJkIjp7Im9mZmljaWFsIjoi2KzZhduB2YjYsduM24Eg2b7bjNix2YgiLCJjb21tb24iOiLZvtuM2LHZiCJ9LCJ6aG8iOnsib2ZmaWNpYWwiOiLnp5jpsoHlhbHlkozlm70iLCJjb21tb24iOiLnp5jpsoEifX0sImxhdGxuZyI6Wy0xMC4wLC03Ni4wXSwibGFuZGxvY2tlZCI6ZmFsc2UsImJvcmRlcnMiOlsiQk9MIiwiQlJBIiwiQ0hMIiwiQ09MIiwiRUNVIl0sImFyZWEiOjEyODUyMTYuMCwiZGVtb255bXMiOnsiZW5nIjp7ImYiOiJQZXJ1dmlhbiIsIm0iOiJQZXJ1dmlhbiJ9LCJmcmEiOnsiZiI6IlDDqXJ1dmllbm5lIiwibSI6IlDDqXJ1dmllbiJ9fSwiZmxhZyI6Ilx1RDgzQ1x1RERGNVx1RDgzQ1x1RERFQSIsIm1hcHMiOnsiZ29vZ2xlTWFwcyI6Imh0dHBzOi8vZ29vLmdsL21hcHMvdURXRVVhWE5jWlRuZzFmUDYiLCJvcGVuU3RyZWV0TWFwcyI6Imh0dHBzOi8vd3d3Lm9wZW5zdHJlZXRtYXAub3JnL3JlbGF0aW9uLzI4ODI0NyJ9LCJwb3B1bGF0aW9uIjozMjk3MTg0NiwiZ2luaSI6eyIyMDE5Ijo0MS41fSwiZmlmYSI6IlBFUiIsImNhciI6eyJzaWducyI6WyJQRSJdLCJzaWRlIjoicmlnaHQifSwidGltZXpvbmVzIjpbIlVUQy0wNTowMCJdLCJjb250aW5lbnRzIjpbIlNvdXRoIEFtZXJpY2EiXSwiZmxhZ3MiOnsicG5nIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS93MzIwL3BlLnBuZyIsInN2ZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20vcGUuc3ZnIiwiYWx0IjoiVGhlIGZsYWcgb2YgUGVydSBpcyBjb21wb3NlZCBvZiB0aHJlZSBlcXVhbCB2ZXJ0aWNhbCBiYW5kcyBvZiByZWQsIHdoaXRlIGFuZCByZWQsIHdpdGggdGhlIG5hdGlvbmFsIGVtYmxlbSBjZW50ZXJlZCBpbiB0aGUgd2hpdGUgYmFuZC4ifSwiY29hdE9mQXJtcyI6eyJwbmciOiJodHRwczovL21haW5mYWN0cy5jb20vbWVkaWEvaW1hZ2VzL2NvYXRzX29mX2FybXMvcGUucG5nIiwic3ZnIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL3BlLnN2ZyJ9LCJzdGFydE9mV2VlayI6Im1vbmRheSIsImNhcGl0YWxJbmZvIjp7ImxhdGxuZyI6Wy0xMi4wNSwtNzcuMDVdfSwicG9zdGFsQ29kZSI6eyJmb3JtYXQiOiIjIyMjIyIsInJlZ2V4IjoiXihcXGR7NX0pJCJ9fV0=
+  recorded_at: Mon, 04 Mar 2024 16:50:57 GMT
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=WEATHER&limit=1&q=Lima,
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 16:50:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '765'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?limit=1&q=lima%2c"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkxpbWEiLCJsb2NhbF9uYW1lcyI6eyJ5aSI6Itec15nXnteQIiwidGEiOiLgrrLgrr/grq7grr4iLCJiZyI6ItCb0LjQvNCwIiwiaXMiOiJMw61tYSIsImJlIjoi0JvRltC80LAiLCJmYSI6ItmE24zZhdinIiwidWciOiLZhNmJ2YXYpyIsIm1sIjoi4LSy4LS/4LSuIiwiZWwiOiLOm86vzrzOsSIsInRoIjoi4Lil4Li04Lih4LiyIiwic3IiOiLQm9C40LzQsCIsImdhIjoiTMOtb21hIiwiYXIiOiLZhNmK2YXYpyIsIm1yIjoi4KSy4KS/4KSu4KS+IiwidWsiOiLQm9GW0LzQsCIsInVyIjoi2YTbjNmF2KciLCJrbyI6IuumrOuniCIsImFtIjoi4YiK4YibIiwib3MiOiLQm9C40LzDpiIsImJuIjoi4Kay4Ka/4Kau4Ka+IiwiZXMiOiJMaW1hIiwicnUiOiLQm9C40LzQsCIsInN2IjoiTGltYSIsIm1rIjoi0JvQuNC80LAiLCJ6aCI6IuWIqemmrC/liKnpqawiLCJjdiI6ItCb0LjQvNCwIiwiZnIiOiJMaW1hIiwia2EiOiLhg5rhg5jhg5vhg5AiLCJhYiI6ItCb0LjQvNCwIiwiZW4iOiJMaW1hIiwiZGUiOiJMaW1hIiwidGwiOiJMdW5nc29kIG5nIExpbWEiLCJoaSI6IuCksuClgOCkruCkviIsImVvIjoiTGltbyIsInBsIjoiTGltYSIsImphIjoi44Oq44OeIiwib2MiOiJMaW1hIiwiaHkiOiLUvNWr1bTVoSIsImh1IjoiTGltYSIsImhlIjoi15zXmdee15QiLCJrdSI6IkzDrm1hIiwiYm8iOiLgvaPgvbLgvIvgvZjgvI0ifSwibGF0IjotMTIuMDYyMTA2NSwibG9uIjotNzcuMDM2NTI1NiwiY291bnRyeSI6IlBFIiwic3RhdGUiOiJMaW1hIn1d
+  recorded_at: Mon, 04 Mar 2024 16:50:58 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/air_pollution?appid=WEATHER&lat=-12.0621065&lon=-77.0365256
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 16:50:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '193'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/air_pollution?lat=-12.06&lon=-77.04"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-77.0365,"lat":-12.0621},"list":[{"main":{"aqi":2},"components":{"co":310.42,"no":3.86,"no2":8.82,"o3":57.22,"so2":8.94,"pm2_5":12.27,"pm10":32.28,"nh3":8.87},"dt":1709571058}]}'
+  recorded_at: Mon, 04 Mar 2024 16:50:58 GMT
+recorded_with: VCR 6.2.0
