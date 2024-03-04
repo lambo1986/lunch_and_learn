@@ -15,14 +15,12 @@ RSpec.describe "Api::V1::Recipes", vcr: true, type: :request do
     end
 
     it "returns a list of recipes from a random country if no country is input" do
-      VCR.use_cassette("recipes_from_kenya") do
-        get "/api/v1/recipes?country="
+      get "/api/v1/recipes?country="
 
-        json_response = JSON.parse(response.body)
+      json_response = JSON.parse(response.body)
 
-        expect(response).to have_http_status(:ok)
-        expect(json_response["data"].first["type"]).to eq "recipe"
-      end
+      expect(response).to have_http_status(:ok)
+      expect(json_response["data"].first["type"]).to eq("recipe")
     end
 
     it "returns an empty array if no recipes are found" do
@@ -31,7 +29,7 @@ RSpec.describe "Api::V1::Recipes", vcr: true, type: :request do
       json_response = JSON.parse(response.body)
 
       expect(response).to have_http_status(:ok)
-      expect(json_response["data"]).to eq []
+      expect(json_response["data"]).to eq([])
     end
 
     it "returns an empty array if empty string is passed as country" do
@@ -40,7 +38,7 @@ RSpec.describe "Api::V1::Recipes", vcr: true, type: :request do
       json_response = JSON.parse(response.body)
 
       expect(response).to have_http_status(:ok)
-      expect(json_response["data"]).to eq []
+      expect(json_response["data"]).to eq([])
     end
   end
 end

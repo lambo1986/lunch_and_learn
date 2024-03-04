@@ -1,7 +1,7 @@
 class CountryService
 
   def countries
-    countries = get_url("all")
+    get_url("all")
   end
 
   def random_country
