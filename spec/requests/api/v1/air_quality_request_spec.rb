@@ -47,4 +47,15 @@ RSpec.describe "pollution requests", vcr: true, type: :request do
       expect(json_response["data"]["attributes"]["readable_aqi"]).to be_a(String)
     end
   end
+
+  describe "GET /api/v1/air_quality?country=" do
+    it "returns a list of air quality data for a random country if no country is provided" do
+      get "/api/v1/air_quality?country="
+
+      json_response = JSON.parse(response.body)
+
+      expect(response).to have_http_status(:ok)
+      expect(json_response["data"]["attributes"]["readable_aqi"]).to be_a(String)
+    end
+  end
 end

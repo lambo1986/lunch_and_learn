@@ -1,7 +1,7 @@
 class CoordsService
 
-  def get_coords(city, zip)
-    get_url("direct?q=#{city},#{zip}&limit=1")
+  def get_coords(city)
+    get_url("direct?q=#{city}&limit=1")
     .first
   end
 
