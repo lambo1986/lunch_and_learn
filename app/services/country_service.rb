@@ -5,7 +5,8 @@ class CountryService
   end
 
   def capital_of(country)
-    data = get_url("name/#{country}?fullText=true")
+    encoded_country = country.gsub(' ', '%20')
+    data = get_url("name/#{encoded_country}?fullText=true")
     data.first[:capital].first
   end
 

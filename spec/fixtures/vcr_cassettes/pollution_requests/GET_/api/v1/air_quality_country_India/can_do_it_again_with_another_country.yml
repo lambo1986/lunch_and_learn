@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 04 Mar 2024 16:50:31 GMT
+      - Mon, 04 Mar 2024 17:47:28 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -32,10 +32,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sibmFtZSI6eyJjb21tb24iOiJLZW55YSIsIm9mZmljaWFsIjoiUmVwdWJsaWMgb2YgS2VueWEiLCJuYXRpdmVOYW1lIjp7ImVuZyI6eyJvZmZpY2lhbCI6IlJlcHVibGljIG9mIEtlbnlhIiwiY29tbW9uIjoiS2VueWEifSwic3dhIjp7Im9mZmljaWFsIjoiUmVwdWJsaWMgb2YgS2VueWEiLCJjb21tb24iOiJLZW55YSJ9fX0sInRsZCI6WyIua2UiXSwiY2NhMiI6IktFIiwiY2NuMyI6IjQwNCIsImNjYTMiOiJLRU4iLCJjaW9jIjoiS0VOIiwiaW5kZXBlbmRlbnQiOnRydWUsInN0YXR1cyI6Im9mZmljaWFsbHktYXNzaWduZWQiLCJ1bk1lbWJlciI6dHJ1ZSwiY3VycmVuY2llcyI6eyJLRVMiOnsibmFtZSI6IktlbnlhbiBzaGlsbGluZyIsInN5bWJvbCI6IlNoIn19LCJpZGQiOnsicm9vdCI6IisyIiwic3VmZml4ZXMiOlsiNTQiXX0sImNhcGl0YWwiOlsiTmFpcm9iaSJdLCJhbHRTcGVsbGluZ3MiOlsiS0UiLCJSZXB1YmxpYyBvZiBLZW55YSIsIkphbWh1cmkgeWEgS2VueWEiXSwicmVnaW9uIjoiQWZyaWNhIiwic3VicmVnaW9uIjoiRWFzdGVybiBBZnJpY2EiLCJsYW5ndWFnZXMiOnsiZW5nIjoiRW5nbGlzaCIsInN3YSI6IlN3YWhpbGkifSwidHJhbnNsYXRpb25zIjp7ImFyYSI6eyJvZmZpY2lhbCI6Itis2YXZh9mI2LHZitipINmD2YrZhtmK2KciLCJjb21tb24iOiLZg9mK2YbZitinIn0sImJyZSI6eyJvZmZpY2lhbCI6IlJlcHVibGlrIEtlbnlhIiwiY29tbW9uIjoiS2VueWEifSwiY2VzIjp7Im9mZmljaWFsIjoiS2XFiHNrw6EgcmVwdWJsaWthIiwiY29tbW9uIjoiS2XFiGEifSwiY3ltIjp7Im9mZmljaWFsIjoiUmVwdWJsaWMgb2YgS2VueWEiLCJjb21tb24iOiJLZW55YSJ9LCJkZXUiOnsib2ZmaWNpYWwiOiJSZXB1YmxpayBLZW5pYSIsImNvbW1vbiI6IktlbmlhIn0sImVzdCI6eyJvZmZpY2lhbCI6IktlZW5pYSBWYWJhcmlpayIsImNvbW1vbiI6IktlZW5pYSJ9LCJmaW4iOnsib2ZmaWNpYWwiOiJLZW5pYW4gdGFzYXZhbHRhIiwiY29tbW9uIjoiS2VuaWEifSwiZnJhIjp7Im9mZmljaWFsIjoiUsOpcHVibGlxdWUgZHUgS2VueWEiLCJjb21tb24iOiJLZW55YSJ9LCJocnYiOnsib2ZmaWNpYWwiOiJSZXB1Ymxpa2EgS2VuaWphIiwiY29tbW9uIjoiS2VuaWphIn0sImh1biI6eyJvZmZpY2lhbCI6IktlbnlhaSBLw7Z6dMOhcnNhc8OhZyIsImNvbW1vbiI6IktlbnlhIn0sIml0YSI6eyJvZmZpY2lhbCI6IlJlcHViYmxpY2EgZGVsIEtlbnlhIiwiY29tbW9uIjoiS2VueWEifSwianBuIjp7Im9mZmljaWFsIjoi44Kx44OL44Ki5YWx5ZKM5Zu9IiwiY29tbW9uIjoi44Kx44OL44KiIn0sImtvciI6eyJvZmZpY2lhbCI6Iuy8gOuDkCDqs7XtmZTqta0iLCJjb21tb24iOiLsvIDrg5AifSwibmxkIjp7Im9mZmljaWFsIjoiUmVwdWJsaWVrIEtlbmlhIiwiY29tbW9uIjoiS2VuaWEifSwicGVyIjp7Im9mZmljaWFsIjoi2KzZhdmH2YjYsduMINqp2YbbjNinIiwiY29tbW9uIjoi2qnZhtuM2KcifSwicG9sIjp7Im9mZmljaWFsIjoiUmVwdWJsaWthIEtlbmlpIiwiY29tbW9uIjoiS2VuaWEifSwicG9yIjp7Im9mZmljaWFsIjoiUmVww7pibGljYSBkbyBRdcOpbmlhIiwiY29tbW9uIjoiUXXDqW5pYSJ9LCJydXMiOnsib2ZmaWNpYWwiOiLQoNC10YHQv9GD0LHQu9C40LrQsCDQmtC10L3QuNGPIiwiY29tbW9uIjoi0JrQtdC90LjRjyJ9LCJzbGsiOnsib2ZmaWNpYWwiOiJLZW5za8OhIHJlcHVibGlrYSIsImNvbW1vbiI6IktlxYhhIn0sInNwYSI6eyJvZmZpY2lhbCI6IlJlcMO6YmxpY2EgZGUgS2VueWEiLCJjb21tb24iOiJLZW5pYSJ9LCJzcnAiOnsib2ZmaWNpYWwiOiLQoNC10L/Rg9Cx0LvQuNC60LAg0JrQtdC90LjRmNCwIiwiY29tbW9uIjoi0JrQtdC90LjRmNCwIn0sInN3ZSI6eyJvZmZpY2lhbCI6IlJlcHVibGlrZW4gS2VueWEiLCJjb21tb24iOiJLZW55YSJ9LCJ0dXIiOnsib2ZmaWNpYWwiOiJLZW55YSBDdW1odXJpeWV0aSIsImNvbW1vbiI6IktlbnlhIn0sInVyZCI6eyJvZmZpY2lhbCI6Itis2YXbgdmI2LHbjNuBINqp24zZhtuM2KciLCJjb21tb24iOiLaqduM2YbbjNinIn0sInpobyI6eyJvZmZpY2lhbCI6IuiCr+WwvOS6muWFseWSjOWbvSIsImNvbW1vbiI6IuiCr+WwvOS6miJ9fSwibGF0bG5nIjpbMS4wLDM4LjBdLCJsYW5kbG9ja2VkIjpmYWxzZSwiYm9yZGVycyI6WyJFVEgiLCJTT00iLCJTU0QiLCJUWkEiLCJVR0EiXSwiYXJlYSI6NTgwMzY3LjAsImRlbW9ueW1zIjp7ImVuZyI6eyJmIjoiS2VueWFuIiwibSI6IktlbnlhbiJ9LCJmcmEiOnsiZiI6IkvDqW55YW5lIiwibSI6IkvDqW55YW4ifX0sImZsYWciOiJcdUQ4M0NcdURERjBcdUQ4M0NcdURERUEiLCJtYXBzIjp7Imdvb2dsZU1hcHMiOiJodHRwczovL2dvby5nbC9tYXBzL05pOU03d2NDeGY4YkpITFg4Iiwib3BlblN0cmVldE1hcHMiOiJodHRwczovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9yZWxhdGlvbi8xOTI3OTgifSwicG9wdWxhdGlvbiI6NTM3NzEzMDAsImdpbmkiOnsiMjAxNSI6NDAuOH0sImZpZmEiOiJLRU4iLCJjYXIiOnsic2lnbnMiOlsiRUFLIl0sInNpZGUiOiJsZWZ0In0sInRpbWV6b25lcyI6WyJVVEMrMDM6MDAiXSwiY29udGluZW50cyI6WyJBZnJpY2EiXSwiZmxhZ3MiOnsicG5nIjoiaHR0cHM6Ly9mbGFnY2RuLmNvbS93MzIwL2tlLnBuZyIsInN2ZyI6Imh0dHBzOi8vZmxhZ2Nkbi5jb20va2Uuc3ZnIiwiYWx0IjoiVGhlIGZsYWcgb2YgS2VueWEgaXMgY29tcG9zZWQgb2YgdGhyZWUgZXF1YWwgaG9yaXpvbnRhbCBiYW5kcyBvZiBibGFjaywgcmVkIHdpdGggd2hpdGUgdG9wIGFuZCBib3R0b20gZWRnZXMsIGFuZCBncmVlbi4gQW4gZW1ibGVtIGNvbXByaXNpbmcgYSByZWQsIGJsYWNrIGFuZCB3aGl0ZSBNYWFzYWkgc2hpZWxkIGNvdmVyaW5nIHR3byBjcm9zc2VkIHdoaXRlIHNwZWFycyBpcyBzdXBlcmltcG9zZWQgYXQgdGhlIGNlbnRlciBvZiB0aGUgZmllbGQuIn0sImNvYXRPZkFybXMiOnsicG5nIjoiaHR0cHM6Ly9tYWluZmFjdHMuY29tL21lZGlhL2ltYWdlcy9jb2F0c19vZl9hcm1zL2tlLnBuZyIsInN2ZyI6Imh0dHBzOi8vbWFpbmZhY3RzLmNvbS9tZWRpYS9pbWFnZXMvY29hdHNfb2ZfYXJtcy9rZS5zdmcifSwic3RhcnRPZldlZWsiOiJtb25kYXkiLCJjYXBpdGFsSW5mbyI6eyJsYXRsbmciOlstMS4yOCwzNi44Ml19LCJwb3N0YWxDb2RlIjp7ImZvcm1hdCI6IiMjIyMjIiwicmVnZXgiOiJeKFxcZHs1fSkkIn19XQ==
-  recorded_at: Mon, 04 Mar 2024 16:50:31 GMT
+  recorded_at: Mon, 04 Mar 2024 17:47:28 GMT
 - request:
     method: get
-    uri: http://api.openweathermap.org/geo/1.0/direct?appid=WEATHER&limit=1&q=Nairobi,
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=WEATHER&limit=1&q=Nairobi
     body:
       encoding: US-ASCII
       string: ''
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 04 Mar 2024 16:50:31 GMT
+      - Mon, 04 Mar 2024 17:47:28 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -62,7 +62,7 @@ http_interactions:
       Connection:
       - keep-alive
       X-Cache-Key:
-      - "/geo/1.0/direct?limit=1&q=nairobi%2c"
+      - "/geo/1.0/direct?limit=1&q=nairobi"
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -73,7 +73,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sibmFtZSI6Ik5haXJvYmkiLCJsb2NhbF9uYW1lcyI6eyJ6aCI6IuWGhee9l+avlSJ9LCJsYXQiOi0xLjMwMzI2NDE1LCJsb24iOjM2LjgyNjM4NDA5OTM0MTU5NSwiY291bnRyeSI6IktFIiwic3RhdGUiOiJOYWlyb2JpIENvdW50eSJ9XQ==
-  recorded_at: Mon, 04 Mar 2024 16:50:31 GMT
+  recorded_at: Mon, 04 Mar 2024 17:47:28 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/air_pollution?appid=WEATHER&lat=-1.30326415&lon=36.826384099341595
@@ -95,7 +95,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 04 Mar 2024 16:50:31 GMT
+      - Mon, 04 Mar 2024 17:47:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -112,6 +112,6 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":36.8264,"lat":-1.3033},"list":[{"main":{"aqi":2},"components":{"co":674.25,"no":0,"no2":8.05,"o3":29.33,"so2":3.82,"pm2_5":15.61,"pm10":36.39,"nh3":13.05},"dt":1709570916}]}'
-  recorded_at: Mon, 04 Mar 2024 16:50:31 GMT
+      string: '{"coord":{"lon":36.8264,"lat":-1.3033},"list":[{"main":{"aqi":2},"components":{"co":727.65,"no":0,"no2":7.97,"o3":26.82,"so2":3.28,"pm2_5":18.65,"pm10":42.22,"nh3":14.44},"dt":1709574268}]}'
+  recorded_at: Mon, 04 Mar 2024 17:47:29 GMT
 recorded_with: VCR 6.2.0

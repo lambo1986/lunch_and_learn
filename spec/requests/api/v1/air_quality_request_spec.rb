@@ -49,13 +49,19 @@ RSpec.describe "pollution requests", vcr: true, type: :request do
   end
 
   describe "GET /api/v1/air_quality?country=" do
+    before do
+      allow_any_instance_of(CountryService).to receive(:random_country).and_return("Saint Kitts and Nevis")
+    end
+
     it "returns a list of air quality data for a random country if no country is provided" do
-      get "/api/v1/air_quality?country="
+      VCR.use_cassette("random_air_quality") do
+        get "/api/v1/air_quality?country="
 
-      json_response = JSON.parse(response.body)
+        json_response = JSON.parse(response.body)
 
-      expect(response).to have_http_status(:ok)
-      expect(json_response["data"]["attributes"]["readable_aqi"]).to be_a(String)
+        expect(response).to have_http_status(:ok)
+        expect(json_response["data"]["attributes"]["readable_aqi"]).to be_a(String)
+      end
     end
   end
 end
