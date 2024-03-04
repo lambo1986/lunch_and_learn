@@ -3,7 +3,7 @@ class AirQualitySerializer
 
   set_type :air_quality
   set_id { nil }
-
+  
   attribute :aqi
   attribute :datetime do |object|
     object.dt
