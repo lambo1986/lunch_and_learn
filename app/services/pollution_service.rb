@@ -13,7 +13,7 @@ class PollutionService
 
   def conn
     Faraday.new(url: "https://api.openweathermap.org/data/2.5/air_pollution") do |faraday|
-      faraday.params[:appid] = Rails.application.credentials.api_key[:weather]
+      faraday.params[:appid] = Rails.application.credentials.api_key[:weather][:weather_key]
     end
   end
 end

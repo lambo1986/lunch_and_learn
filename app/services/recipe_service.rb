@@ -1,7 +1,7 @@
 class RecipeService
-  
+
   def get_rando_recipes_for_country(country)
-    recipes = get_url("/api/recipes/v2?q=#{country}&type=public&random=true")
+    get_url("/api/recipes/v2?q=#{country}&type=public&random=true")
   end
 
   private
@@ -13,8 +13,8 @@ class RecipeService
 
   def conn
     Faraday.new(url: "https://api.edamam.com") do |faraday|
-      faraday.params["app_id"] = "cb4a5fa2"
-      faraday.params["app_key"] = Rails.application.credentials.api_key[:recipes]
+      faraday.params["app_id"] = Rails.application.credentials.api_key[:recipes][:recipes_id]
+      faraday.params["app_key"] = Rails.application.credentials.api_key[:recipes][:recipes_key]
     end
   end
 end

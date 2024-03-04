@@ -77,8 +77,9 @@ VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
   config.configure_rspec_metadata!
-  config.filter_sensitive_data('EDAMAM') { Rails.application.credentials[:api_key][:recipes] }
-  config.filter_sensitive_data('WEATHER') { Rails.application.credentials[:api_key][:weather] }
+  config.filter_sensitive_data('EDAMAM_KEY') { Rails.application.credentials.api_key[:recipes][:recipes_key] }
+  config.filter_sensitive_data('EDAMAM_ID') { Rails.application.credentials.api_key[:recipes][:recipes_id] }
+  config.filter_sensitive_data('WEATHER') { Rails.application.credentials.api_key[:weather][:weather_key] }
   config.default_cassette_options = { match_requests_on: [:method, :path] }
 end
 # config.default_cassette_options = { record: :all }

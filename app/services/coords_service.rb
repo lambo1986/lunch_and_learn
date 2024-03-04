@@ -14,7 +14,7 @@ class CoordsService
 
   def conn
     Faraday.new(url: "http://api.openweathermap.org/geo/1.0/") do |faraday|
-      faraday.params[:appid] = Rails.application.credentials.api_key[:weather]
+      faraday.params[:appid] = Rails.application.credentials.api_key[:weather][:weather_key]
     end
   end
 end
