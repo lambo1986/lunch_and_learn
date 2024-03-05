@@ -29,4 +29,15 @@ RSpec.describe "Api::V1::CountriesController", vcr: true, type: :request do
       expect(json_response["data"]["attributes"]["video"]).to eq({})
     end
   end
+
+  describe "GET /api/v1/random_country" do
+    it "returns a random country" do
+      get "/api/v1/random_country"
+
+      json_response = JSON.parse(response.body)
+
+      expect(response.status).to eq(200)
+      expect(json_response["data"]["attributes"]["name"]).to be_a(String)
+    end
+  end
 end

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       resources :sessions, only: [:create]
       resources :favorites, only: [:create, :index, :destroy]
       get '/learning_resources', to: 'countries#show', as: 'country'
+      get '/random_country', to: 'countries#random_country', as: 'random_country'
     end
   end
 end

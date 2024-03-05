@@ -13,4 +13,9 @@ class Api::V1::CountriesController < ApplicationController
 
     render json: ImageVideoSerializer.new(resource_data).serializable_hash.to_json
   end
+
+  def random_country
+    country = CountryFacade.new.random
+    render json: CountrySerializer.new(country).serializable_hash.to_json
+  end
 end
