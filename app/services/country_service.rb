@@ -7,7 +7,12 @@ class CountryService
   end
 
   def random_country
-    countries.sample[:name][:common]
+    country = countries.sample[:name][:common]
+    country if valid_country?(country)
+  end
+
+  def valid_country?(country)
+    countries.any? { |c| c[:name][:common] == country }
   end
 
   private

@@ -18,4 +18,12 @@ RSpec.describe CountryService, vcr: true, type: :service do
       expect(country).to be_a(String)
     end
   end
+
+  describe "#valid_country?" do
+    it "returns true if the country is valid" do
+      countries = CountryService.new.valid_country?("Mexico")
+
+      expect(countries).to be true
+    end
+  end
 end
