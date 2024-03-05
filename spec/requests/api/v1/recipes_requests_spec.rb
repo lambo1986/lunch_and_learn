@@ -14,7 +14,7 @@ RSpec.describe "Api::V1::Recipes", vcr: true, type: :request do
       end
     end
 
-    it "returns a list of recipes from a random country if no country is input" do# needs to be controlled, tripping up VCR
+    it "returns a list of recipes from a random country if no country is input" do
       get "/api/v1/recipes?country="
 
       json_response = JSON.parse(response.body)
