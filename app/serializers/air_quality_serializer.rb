@@ -3,12 +3,9 @@ class AirQualitySerializer
 
   set_type :air_quality
   set_id { nil }
-  
-  attribute :aqi
-  attribute :datetime do |object|
-    object.dt
-  end
 
+  attribute :aqi
+  attribute :dt
   attribute :readable_aqi do |object|
     readable_aqi(object.aqi)
   end
